@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;          /* #FAFAFA */
+    --foreground: 220 3% 9%;          /* #111827 */
+    --card: 0 0% 100%;               /* #FFFFFF */
+    --card-foreground: 220 3% 9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 3% 9%;
+    --primary: 220 3% 9%;            /* #111827 Black Accent */
+    --primary-foreground: 0 0% 100%; /* #FFFFFF */
+    --secondary: 220 13% 96%;        /* Light Grey secondary */
+    --secondary-foreground: 220 3% 9%;
+    --muted: 220 13% 96%;
+    --muted-foreground: 220 9% 46%;  /* Dark Grey secondary */
+    --accent: 220 13% 96%;
+    --accent-foreground: 220 3% 9%;
+    --destructive: 0 84.2% 60.2%;    /* #EF4444 Red */
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 13% 91%;          /* #E5E7EB border */
+    --input: 220 13% 91%;
+    --ring: 220 3% 9%;
+    --radius: 0.5rem;
+  }
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: var(--font-sans), sans-serif;
+  overflow-x: hidden;
+}
+
+/* Premium flat workspace panels */
+.glass-panel {
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+}
+
+.gradient-text {
+  color: #111827;
+}
+
+/* Animations for responsive drawers */
+@keyframes slideRight {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-slideRight {
+  animation: slideRight 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.15s ease-out forwards;
+}
+
