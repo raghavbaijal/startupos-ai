@@ -1,5 +1,7 @@
 # StartupOS AI - AI Co-Founder SaaS Platform
 
+https://startupos-ai.vercel.app/signup
+
 StartupOS AI is a flagship AI-powered SaaS platform designed to act as an automated, intelligent co-founder. By evaluating startup ideas, the platform generates complete execution blueprints, market validation, branding kits, financial forecasts, marketing plans, slide decks, and launch roadmaps.
 
 ## Tech Stack
